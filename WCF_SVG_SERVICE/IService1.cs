@@ -14,6 +14,10 @@ namespace WCF_SVG_SERVICE
     public interface IService1
     {
 
+        [OperationContract]
+        [WebInvoke(Method = "GET", UriTemplate = "getString")]
+        string teststring();
+
 
         [OperationContract]
         [WebInvoke(Method ="POST",

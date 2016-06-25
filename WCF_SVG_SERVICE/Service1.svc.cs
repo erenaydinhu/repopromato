@@ -32,6 +32,13 @@ namespace WCF_SVG_SERVICE
             return organisatie;
 
         }
+        public string teststring()
+        {
+
+            return "it works";
+        }
+
+
         public string PostSampleMethod(Stream data)
         {
             StreamReader reader = new StreamReader(data);
@@ -50,8 +57,8 @@ namespace WCF_SVG_SERVICE
 
 
 
-            File.WriteAllText(@"C:\Users\Eren_2\Desktop\message.txt", returnValue);
-            File.WriteAllText(@"C:\Users\Eren_2\Desktop\message2.html", final.ToString());
+         //   File.WriteAllText(@"C:\Users\Eren_2\Desktop\message.txt", returnValue);
+         //   File.WriteAllText(@"C:\Users\Eren_2\Desktop\message2.html", final.ToString());
 
 
             // return the XMLString data
@@ -62,7 +69,7 @@ namespace WCF_SVG_SERVICE
             finalDocument.Add(finalElement);
 
            
-            finalDocument.Save(@"C:\Users\Eren_2\Desktop\testxml.txt");
+         //   finalDocument.Save(@"C:\Users\Eren_2\Desktop\testxml.txt");
 
             return final.ToString();
 
@@ -140,9 +147,6 @@ namespace WCF_SVG_SERVICE
             return composite;
         }
 
-
-
-
-
+   
     }
 }
